@@ -22,7 +22,7 @@ export function stepDown(numbers) {
 
   for (let indx = 0; indx < numbers.length; indx++) {
     
-    if (lastNum === 0) {
+    if (indx === 0) {
       lastNum = numbers[indx]
       currNum = numbers[indx]
       console.log(`First value in array, setting both lastNum and currNum to ${numbers[indx]}`)

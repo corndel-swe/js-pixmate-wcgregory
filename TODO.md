@@ -4,9 +4,9 @@ The todos in this section are suggestions - you just feel free to get creative!
 
 ## Drawings
 
-- [ ] Play with rectangle
+- [x] Play with rectangle
 
-- [ ] Draw a triangle
+- [x] Draw a triangle
 
 - [ ] Draw an inverted triangle
 
