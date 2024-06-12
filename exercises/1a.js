@@ -12,7 +12,6 @@
  * @returns {number} The sum of the even numbers smaller than or equal to n
  */
 export function addEven(n) {
-  // TODO
   let indx = 1
   let total = 0
 
@@ -30,5 +29,5 @@ export function addEven(n) {
   return total
 }
 
-const whatis = addEven(11)
-console.log(whatis)
+// const whatis = addEven(11)
+// console.log(whatis)
