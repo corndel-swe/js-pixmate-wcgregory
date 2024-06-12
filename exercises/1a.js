@@ -13,19 +13,19 @@
  */
 export function addEven(n) {
   // TODO
-  // let indx = 1
+  let indx = 1
   let total = 0
 
-  for (let indx = 0; indx <= n; indx += 2) {
-    total += indx
-  }
-
-  // while (indx <= n) {
-  //   indx++
-  //  if (indx % 2 == 0) {
-  //    total += indx
-  //  }
+  // for (let indx = 0; indx <= n; indx += 2) {
+  //   total += indx
   //}
+
+  while (indx <= n) {
+    if (indx % 2 == 0) {
+      total += indx
+    }
+    indx++
+  }
   
   return total
 }
