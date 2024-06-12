@@ -16,5 +16,35 @@
  *                   Returns -1 if no such element is found or if the array is empty.
  */
 export function stepDown(numbers) {
-  // TODO
+  let lowerIndex = -1
+  let lastNum = 0
+  let currNum = Number()
+
+  for (let indx = 0; indx < numbers.length; indx++) {
+    
+    if (lastNum == 0) {
+      lastNum = numbers[indx]
+      currNum = numbers[indx]
+      console.log(`First value in array, setting both lastNum and currNum to ${numbers[indx]}`)
+    } else {
+      lastNum = numbers[indx - 1]
+      currNum = numbers[indx]
+      console.log(`Setting currNum to ${numbers[indx]}, lastNum is ${lastNum}`)
+    }
+
+    if (lastNum > currNum) {
+      lowerIndex = indx
+      console.log(`Setting stepDown to index value ${indx}`)
+      break
+    } else {
+      continue
+    }
+
+  }
+  
+  if (lowerIndex == -1) {
+    console.log(`No stepDown values found in array`)
+  }
+
+  return lowerIndex
 }
