@@ -30,18 +30,27 @@ export function stepDown(numbers) {
       lastNum = numbers[indx - 1]
       currNum = numbers[indx]
       console.log(`Setting currNum to ${numbers[indx]}, lastNum is ${lastNum}`)
+
+      if (lastNum > currNum) {
+        lowerIndex = indx
+        console.log(`Setting stepDown to index value ${indx}`)
+        break
+      } else {
+        continue
+      }
+
     }
 
-    if (lastNum > currNum) {
-      lowerIndex = indx
-      console.log(`Setting stepDown to index value ${indx}`)
-      break
-    } else {
-      continue
-    }
+    // if (lastNum > currNum) {
+    //  lowerIndex = indx
+    //  console.log(`Setting stepDown to index value ${indx}`)
+    //  break
+    //} else {
+    //  continue
+    //}
 
   }
-  
+
   if (lowerIndex == -1) {
     console.log(`No stepDown values found in array`)
   }
