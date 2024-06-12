@@ -12,4 +12,4 @@ export function triangle(size) {
   }
 }
 
-triangle(8)
+triangle(5)
