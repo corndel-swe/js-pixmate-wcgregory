@@ -18,12 +18,15 @@ export function sumSelective(numbers) {
     
     if (numbers[indx] % 2 == 0 && numbers[indx] > 10) {
       // console.log(`Not adding ${numbers[indx]} at index=${indx}`)
+      continue
     } else if (numbers[indx] % 2 == 0 || numbers[indx] > 10) {
       total += numbers[indx]
       // console.log(`Adding ${numbers[indx]} at index=${indx}`)
     } else {
       // console.log(`Not even or greater than 10: ${numbers[indx]}`)
+      continue
     }
+  
   }
 
   return total
