@@ -22,7 +22,7 @@ export function stepDown(numbers) {
 
   for (let indx = 0; indx < numbers.length; indx++) {
     
-    if (lastNum == 0) {
+    if (lastNum === 0) {
       lastNum = numbers[indx]
       currNum = numbers[indx]
       console.log(`First value in array, setting both lastNum and currNum to ${numbers[indx]}`)
@@ -41,17 +41,9 @@ export function stepDown(numbers) {
 
     }
 
-    // if (lastNum > currNum) {
-    //  lowerIndex = indx
-    //  console.log(`Setting stepDown to index value ${indx}`)
-    //  break
-    //} else {
-    //  continue
-    //}
-
   }
 
-  if (lowerIndex == -1) {
+  if (lowerIndex === -1) {
     console.log(`No stepDown values found in array`)
   }
 

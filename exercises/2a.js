@@ -16,16 +16,23 @@ export function sumSelective(numbers) {
 
   for (let indx = 0; indx < numbers.length; indx++) {
     
-    if (numbers[indx] % 2 == 0 && numbers[indx] > 10) {
-      // console.log(`Not adding ${numbers[indx]} at index=${indx}`)
-      continue
-    } else if (numbers[indx] % 2 == 0 || numbers[indx] > 10) {
+    if (
+      (numbers[indx] % 2 === 0 || numbers[indx] > 10) &&
+      !(numbers[indx] % 2 === 0 && numbers[indx] > 10)
+    ) {
       total += numbers[indx]
-      // console.log(`Adding ${numbers[indx]} at index=${indx}`)
-    } else {
-      // console.log(`Not even or greater than 10: ${numbers[indx]}`)
-      continue
     }
+    
+    //if (numbers[indx] % 2 === 0 && numbers[indx] > 10) {
+      // console.log(`Not adding ${numbers[indx]} at index=${indx}`)
+    //  continue
+    //} else if (numbers[indx] % 2 === 0 || numbers[indx] > 10) {
+    //  total += numbers[indx]
+      // console.log(`Adding ${numbers[indx]} at index=${indx}`)
+    //} else {
+      // console.log(`Not even or greater than 10: ${numbers[indx]}`)
+    //  continue
+    //}
   
   }
 
