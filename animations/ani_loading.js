@@ -6,7 +6,7 @@ export function loading(length) {
   const frames = Array()
 
   for (let i = 0; i <= length; i++) {
-    let percentage = ((i / length) * 100)
+    let percentage = ((i / length) * 100).toFixed(0)
     let line = chalk.white('|')
     line += chalk.green('#').repeat(i)
     line += ' '.repeat(length - i)
@@ -18,4 +18,4 @@ export function loading(length) {
   animate(frames, 0.5)
 }
 
-loading(10)
+loading(8)
