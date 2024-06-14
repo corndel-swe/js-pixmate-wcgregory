@@ -1,8 +1,6 @@
 /**
  * Create a function that accepts width and height parameters
  * Draw the shape to console
- *
- * 
  */
 export function rectangle(width, height) {
   // make an outer loop for the rows

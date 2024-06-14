@@ -1,15 +1,47 @@
+// chalk allows us to change output color :)
+import chalk from 'chalk'
+
 /**
  * Create a function that accepts width and height parameters
  * Draw the shape to console
- *
- * 
  */
-export function triangle(size) {
-  // use size to build the triangle
+export function equilateralTriangle(size) {
+  // use size to build the equilateral triangle
   for (let row = 0; row < size; row++) {
     let line = ' '.repeat(size - row) + '#' + '#'.repeat(row * 2)
     console.log(line)
   }
 }
 
-triangle(5)
+export function sideTriangle(size) {
+  // use size to build the side triangle
+  for (let row = 1; row <= size; row++) {
+    let line = chalk.red('*').repeat(row)
+    console.log(line)
+  }
+}
+
+export function invertedSideTriangle(size) {
+  // use size to build the inverted side triangle
+  for (let row = 0; row <= size; row++) {
+    let line = chalk.red('*').repeat(size - row)
+    console.log(line)
+  }
+}
+
+export function triangleSandwich(size) {
+  // use size to build the side equilateral triangle
+  for (let row = 1; row <= size; row++) {
+    let line = chalk.red('*').repeat(row)
+    console.log(line)
+  }
+  for (let row = 1; row <= size; row++) {
+    let line = chalk.red('*').repeat(size - row)
+    console.log(line)
+  }
+}
+
+// equilateralTriangle(5)
+// sideTriangle(5)
+// invertedSideTriangle(5)
+triangleSandwich(5)
