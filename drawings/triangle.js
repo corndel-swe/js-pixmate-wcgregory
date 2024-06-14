@@ -2,9 +2,10 @@
 import chalk from 'chalk'
 
 /**
- * Create a function that accepts width and height parameters
- * Draw the shape to console
+ * Create a series of functions that accept a size parameter
+ * Draw the triangular shape to console based on size
  */
+
 export function equilateralTriangle(size) {
   // use size to build the equilateral triangle
   for (let row = 0; row < size; row++) {
@@ -31,7 +32,7 @@ export function invertedSideTriangle(size) {
 
 export function triangleSandwich(size) {
   // use size to build the side equilateral triangle
-  for (let row = 1; row <= size; row++) {
+  for (let row = 0; row <= size; row++) {
     let line = chalk.red('*').repeat(row)
     console.log(line)
   }
