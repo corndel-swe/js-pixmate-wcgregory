@@ -11,9 +11,11 @@ export function loading(length) {
     line += chalk.green('#').repeat(i)
     line += ' '.repeat(length - i)
     line += chalk.white('|')
-    line += ` ${percentage}%`
+    line += ' ' + chalk.green(percentage) + chalk.green('%')
+    //let percentage = `${((i / length) * 100).toFixed(0)}%`
 
     frames.push(line)
+    // frames.push(percentage)
   }
   animate(frames, 0.5)
 }
