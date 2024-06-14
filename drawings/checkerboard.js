@@ -2,8 +2,8 @@
 import chalk from 'chalk'
 
 /**
- * Create a series of functions that accept a size parameter
- * Draw a diagonal shape to console based on size
+ * Create a checkerboard function that accept a size parameter
+ * Draw a checkerboard shape to the console based on size
  */
 
 export function checkerBoard(size) {
@@ -19,4 +19,4 @@ export function checkerBoard(size) {
   }
 }
 
-checkerBoard(5)
+checkerBoard(8)
