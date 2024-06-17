@@ -8,13 +8,13 @@ The todos in this section are suggestions - you just feel free to get creative!
 
 - [x] Draw a triangle
 
-- [ ] Draw an inverted triangle
+- [x] Draw an inverted triangle
 
-- [ ] Draw a triangle sandwich
+- [x] Draw a triangle sandwich
 
-- [ ] Draw some diagonals
+- [x] Draw some diagonals
 
-- [ ] Draw a checkerboard
+- [x] Draw a checkerboard
 
 ### Rectangle
 
@@ -118,11 +118,11 @@ colour, pattern, functions, conditions... there are no rules.
 
 Play with `animations/loading.js`:
 
-- [ ] Make `loading.js` into a function to adjust the length of the loading bar
+- [x] Make `loading.js` into a function to adjust the length of the loading bar
 
-- [ ] Add some colour to `loading.js`
+- [x] Add some colour to `loading.js`
 
-- [ ] Add a message to each frame in `loading.js` saying the current %
+- [x] Add a message to each frame in `loading.js` saying the current %
       completion
 
 Ideas for new animations:
