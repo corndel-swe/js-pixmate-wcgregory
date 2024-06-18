@@ -11,5 +11,11 @@
  * @returns {number} The sum of the array
  */
 export function sumArray(arr) {
-  // TODO
+  let total = 0
+
+  for (let indx = 0; indx < arr.length; indx++) {
+    total += arr[indx]
+  }
+
+  return total
 }
