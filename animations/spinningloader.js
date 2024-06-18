@@ -31,4 +31,4 @@ function spinningLoader(length) {
   animate(frames, 0.5)
 }
 
-spinningLoader(10)
+spinningLoader(15)
